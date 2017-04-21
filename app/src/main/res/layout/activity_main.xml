@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/discount_lay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="#002b63">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="@string/policy_discount"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/period_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/discount_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_period"
+            android:textSize="32sp"
+            android:textColor="#2a7ee3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circular_progress_lay"
+        android:layout_below="@id/period_lay"
+        android:layout_width="220dp"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:layout_height="220dp">
+
+        <com.arity.CircularProgressView
+            android:id="@+id/circular_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:arc_finished_color="#2a7ee3"
+            app:arc_primary_text="60"
+            app:arc_primary_text_color="#2a7ee3"
+            app:arc_primary_text_size="82sp"
+            app:arc_progress="0.5"
+            app:arc_secondary_text="Days Left"
+            app:arc_secondary_text_color="#0055c3"
+            app:arc_secondary_text_size="18sp"
+            app:arc_stroke_width="20dp"
+            app:arc_unfinished_color="#bfd8f6" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/earned_discount_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_below="@+id/circular_progress_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/earned_discount"
+            android:textSize="16sp"
+            android:textColor="#758693"/>
+    </LinearLayout>
+
+</RelativeLayout>

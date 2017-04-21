@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CircularProgressDemo</string>
+    <string name="policy_discount">App-Installation Policy Discount: 10%</string>
+    <string name="day_period">60-Day Period</string>
+    <string name="earned_discount">Congratulations! You’ve earned a 10% discount on your policy, just for downloading this app and and using it for 60 days.</string>
+</resources>
